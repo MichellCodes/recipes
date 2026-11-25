@@ -16,7 +16,30 @@
       </header>
     
       <main>
-        <h2>Contact</h2>
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <p>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required>
+          </p>
+          <p>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required>
+          </p>
+          <p>
+            <label for="topic">Topic</label><br>
+            <select id="topic" name="topic">
+              <option value="question">Question</option>
+              <option value="suggestion">Recipe suggestion</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </p>
+          <p>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="5" cols="40"></textarea>
+          </p>
+          <button type="submit">Send</button>
+        </form>
       </main>
     
       <footer>
