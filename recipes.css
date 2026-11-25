@@ -1,0 +1,60 @@
+/*=====Variables=====*/
+:root {
+ --color-primary: #8b2e 16;
+ --color-accent: #e08a 1e;
+ --color-text: #2b2b2b;
+ --color-bg: #faf7f2;
+ --font-body: Georgia, 'Times New Roman', serif;
+--font-heading: 'Trebuchet MS', Arial, sans-serif;
+--space-sm:0.5rem;
+--space-md: 1rem;
+--space-Ig: 2rem;
+}
+
+/*=====Base======*/
+body {
+ font-family:var(--font-body);
+ color:var(--color-text);
+ background-color: var(--color-bg);
+ line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family:var(--font-heading);
+    color: var(--color-primary);
+}
+
+
+/* ========== Navigation =========== */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+
+nav a {
+    color: var(--color-primary);
+    text-decoration: none;
+    padding: var(--space-sm);
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/*===============Recipe Pages================ */
+.ingredients li:nth-child(odd) {
+    background-color: #f0e8dc;
+}
+
+.method li {
+    margin-bottom: var(--space-sm);
+}
+
+footer {
+    color: #555;
+    font-size: 0.875rem;
+    text-align:center;
+}
